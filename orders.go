@@ -164,7 +164,7 @@ type OrderResponse struct {
 	Code    int    `json:"code,omitempty" code:"symbol,omitempty"`
 	Message string `json:"message,omitempty" yaml:"message,omitempty"`
 
-	IsSuccess bool `json:"isSuccess,omitempty" yaml:"isSuccess,omitempty"` //custom
+	IsFailed bool `json:"isFailed,omitempty" yaml:"isFailed,omitempty"` //custom
 }
 
 type MultiOrderResponse struct {
@@ -173,7 +173,7 @@ type MultiOrderResponse struct {
 	Code    int                 `json:"code,omitempty" code:"symbol,omitempty"`
 	Message string              `json:"message,omitempty" yaml:"message,omitempty"`
 
-	IsSuccess bool `json:"isSuccess,omitempty" yaml:"isSuccess,omitempty"` //custom
+	IsFailed bool `json:"isFailed,omitempty" yaml:"isFailed,omitempty"` //custom
 }
 
 type OrderDataResponse struct {
@@ -187,7 +187,7 @@ type OrderBookResponse struct {
 	Code    int    `json:"code,omitempty" code:"symbol,omitempty"`
 	Message string `json:"message,omitempty" yaml:"message,omitempty"`
 
-	IsSuccess bool `json:"isSuccess,omitempty" yaml:"isSuccess,omitempty"` //custom
+	IsFailed bool `json:"isFailed,omitempty" yaml:"isFailed,omitempty"` //custom
 
 	OrderBook []OrderBook `json:"orderBook,omitempty" yaml:"orderBook,omitempty"`
 }
